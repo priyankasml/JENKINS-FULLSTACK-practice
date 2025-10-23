@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:2030/HOTELMANGEMENTAPI";
+export const API_URL = "http://localhost:2030/HOTELMANGEMENTAPI-SRPINGBOOT/api/hotels";
