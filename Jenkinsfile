@@ -6,7 +6,7 @@ pipeline {
         // ===== FRONTEND BUILD =====
         stage('Build Frontend') {
             steps {
-                dir('HOTELMANAGEMENT-REACT') {
+                dir('hotelmangementapi-react') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
@@ -21,7 +21,7 @@ pipeline {
                     rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\hotelmanagement"
                 )
                 mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\hotelmanagement"
-                xcopy /E /I /Y HOTELMANAGEMENT-REACT\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\hotelmanagement"
+                xcopy /E /I /Y hotelmangementapi-react\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\hotelmanagement"
                 '''
             }
         }
