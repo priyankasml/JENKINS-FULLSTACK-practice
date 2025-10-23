@@ -1,2 +1,1 @@
-// Centralized API URL
-export const API_URL = "http://localhost:8081/api/hotels";
+export const API_URL = "http://localhost:2030/HOTELMANGEMENTAPI";
